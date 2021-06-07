@@ -458,7 +458,7 @@ function captureUserMedia(callback) {
     video1.setAttribute('autoplay', true);
     video1.setAttribute('controls', true);
     participants.insertBefore(video1, participants.firstChild);
-    getUserMedia({
+    getUserMedia1({
         video: video1,
         onsuccess: function(stream) {
             config.attachStream = stream;
@@ -474,7 +474,22 @@ function captureUserMedia(callback) {
 }
 
 
-
+	
+function getUserMedia1(options) {
+    navigator.mediaDevices.getUserMedia(options.constraints || {
+        audio: true,
+        video: video_constraints
+    }).then(function(stream) {
+        var video1 = options.video;
+        if (video1) {
+            video1.srcObject = stream;
+            video1.play();
+        }
+        options.onsuccess && options.onsuccess(stream);
+    }).catch(function(e) {
+        alert(e.message || JSON.stringify(e));
+    });
+}
 
 
 /* on page load: get public rooms */
