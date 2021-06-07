@@ -458,8 +458,9 @@ function captureUserMedia(callback) {
     video1.setAttribute('autoplay', true);
     video1.setAttribute('controls', true);
     participants.insertBefore(video1, participants.firstChild);
+	console.log('a')
     getUserMedia1({
-        video: video1,
+        video1: video1,
         onsuccess: function(stream) {
             config.attachStream = stream;
             callback && callback();
