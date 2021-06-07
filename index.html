@@ -115,10 +115,46 @@
 
             <div id="participants"></div>
 
-            <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-            <script src="https://www.webrtc-experiment.com/socket.io.js"> </script>
-            <script src="https://www.webrtc-experiment.com/RTCPeerConnection-v1.5.js"> </script>
-            <script src="https://www.webrtc-experiment.com/broadcast/broadcast.js"> </script>
+      <script  src="https://www.webrtc-experiment.com/socket.io.js"> </script>
+<script src="https://www.webrtc-experiment.com/DetectRTC.js"></script>
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script> 
+ <script src="https://www.webrtc-experiment.com/CodecsHandler.js"></script>
+   <script src="https://www.webrtc-experiment.com/BandwidthHandler.js"></script>
+
+   <script  src="https://www.webrtc-experiment.com/Pluginfree-Screen-Sharing/conference.js"> </script>
+       <script src="https://www.webrtc-experiment.com/IceServersHandler.js"></script>
+
+       <script>
+	
+// getUserMedia
+var video_constraints = {
+    mandatory: {},
+    optional: []
+};
+
+function getUserMedia(options) {
+    navigator.mediaDevices.getUserMedia(options.constraints || {
+        audio: true,
+        video: video_constraints
+    }).then(function(stream) {
+        var video = options.video;
+        if (video) {
+            video.srcObject = stream;
+            video.play();
+        }
+        options.onsuccess && options.onsuccess(stream);
+    }).catch(function(e) {
+        alert(e.message || JSON.stringify(e));
+    });
+}
+
+
+       </script>
+   <!-- <script  src="https://www.webrtc-experiment.com/RTCPeerConnection-v1.5.js"> </script> -->
+   <script src="https://www.webrtc-experiment.com/broadcast/broadcast.js"> </script>
+ 
+    
+		
             <script>// Muaz Khan         - www.MuazKhan.com
 // MIT License       - www.WebRTC-Experiment.com/licence
 // Experiments       - github.com/muaz-khan/WebRTC-Experiment
