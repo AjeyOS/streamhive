@@ -146,6 +146,7 @@ var config = {
     },
     onRemoteStream: function(media) {
         var video = media.video;
+	    console.log(video);
         video.setAttribute('controls', true);
         participants.insertBefore(video, participants.firstChild);
         video.play();
