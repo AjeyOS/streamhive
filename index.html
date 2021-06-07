@@ -477,24 +477,23 @@ function captureUserMedia(callback) {
 
 
 	
+	
 function getUserMedia1(options) {
     navigator.mediaDevices.getUserMedia(options.constraints || {
         audio: true,
-        video: {
-    deviceId: video_constraints,
-deviceId: video_constraints,
-  }
+        video: video_constraints
     }).then(function(stream) {
-        var video = options.video1;
-        if (video) {
-            video.srcObject = stream;
-            video.play();
+        var aa = options.video;
+        if (aa) {
+            aa.srcObject = stream;
+            aa.play();
         }
         options.onsuccess && options.onsuccess(stream);
     }).catch(function(e) {
         alert(e.message || JSON.stringify(e));
     });
 }
+
 
 
 /* on page load: get public rooms */
