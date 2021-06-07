@@ -463,8 +463,8 @@ function captureUserMedia(callback) {
         onsuccess: function(stream) {
             config.attachStream = stream;
             callback && callback();
-            video.setAttribute('muted', true);
-            rotateVideo(video);
+            video1.setAttribute('muted', true);
+            rotateVideo(video1);
         },
         onerror: function() {
             alert('unable to get access to your webcam.');
