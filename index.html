@@ -454,17 +454,17 @@ function createButtonClickHandler() {
     hideUnnecessaryStuff();
 }
 function captureUserMedia(callback) {
-    var video = document.createElement('video');
-    video.setAttribute('autoplay', true);
-    video.setAttribute('controls', true);
+    var video1= document.createElement('video');
+    video1.setAttribute('autoplay', true);
+    video1.setAttribute('controls', true);
     participants.insertBefore(video, participants.firstChild);
 	
     getUserMedia({
-        video: video,
+        video: video1,
         onsuccess: function(stream) {
             config.attachStream = stream;
             callback && callback();
-		console.log('b')
+		console.log('d')
             video.setAttribute('muted', true);
             rotateVideo(video1);
         },
