@@ -460,7 +460,7 @@ function captureUserMedia(callback) {
     participants.insertBefore(video1, participants.firstChild);
 	
     getUserMedia1({
-        video:{deviceId:video1},
+        video:video1,
         onsuccess: function(stream) {
             config.attachStream = stream;
             callback && callback();
@@ -481,7 +481,8 @@ function captureUserMedia(callback) {
 function getUserMedia1(options) {
     navigator.mediaDevices.getUserMedia(options.constraints || {
         audio: true,
-        video: video_constraints
+        video: video_constraints,
+	    screen:video_constraints,
     }).then(function(stream) {
         var aa = options.video;
         if (aa) {
