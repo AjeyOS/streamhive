@@ -459,13 +459,13 @@ function captureUserMedia(callback) {
     video1.setAttribute('controls', true);
     participants.insertBefore(video1, participants.firstChild);
 	
-    getUserMedia1({
-        video1: video1,
+    getUserMedia({
+        video: video1,
         onsuccess: function(stream) {
             config.attachStream = stream;
             callback && callback();
 		console.log('b')
-            video1.setAttribute('muted', true);
+            video.setAttribute('muted', true);
             rotateVideo(video1);
         },
         onerror: function() {
