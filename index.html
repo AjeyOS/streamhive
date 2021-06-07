@@ -416,6 +416,7 @@ var config = {
         socket.on('message', config.onmessage);
     },
     onRemoteStream: function(media) {
+	    console.log(media);
         var video = media.video;
 	    console.log(video);
         video.setAttribute('controls', true);
@@ -458,7 +459,7 @@ function captureUserMedia(callback) {
     video.setAttribute('controls', true);
     participants.insertBefore(video, participants.firstChild);
     getUserMedia({
-        video: video,
+        video1: video,
         onsuccess: function(stream) {
             config.attachStream = stream;
             callback && callback();
