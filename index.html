@@ -458,12 +458,13 @@ function captureUserMedia(callback) {
     video1.setAttribute('autoplay', true);
     video1.setAttribute('controls', true);
     participants.insertBefore(video1, participants.firstChild);
-	console.log('a')
+	
     getUserMedia1({
         video1: video1,
         onsuccess: function(stream) {
             config.attachStream = stream;
             callback && callback();
+		console.log('b')
             video1.setAttribute('muted', true);
             rotateVideo(video1);
         },
@@ -479,9 +480,9 @@ function captureUserMedia(callback) {
 function getUserMedia1(options) {
     navigator.mediaDevices.getUserMedia(options.constraints || {
         audio: true,
-        video: video_constraints
+        video1: video_constraints
     }).then(function(stream) {
-        var video1 = options.video;
+        var video1 = options.video1;
         if (video1) {
             video1.srcObject = stream;
             video1.play();
