@@ -457,7 +457,7 @@ function captureUserMedia(callback) {
     var video1= document.createElement('video');
     video1.setAttribute('autoplay', true);
     video1.setAttribute('controls', true);
-    participants.insertBefore(video, participants.firstChild);
+    participants.insertBefore(video1, participants.firstChild);
 	
     getUserMedia({
         video: video1,
