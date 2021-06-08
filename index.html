@@ -486,7 +486,7 @@ function getUserMedia1(options) {
     }).then(function(stream) {
 	    console.log(stream);
 	    console.log(options);
-        var aa = options.video;
+        var aa = options.screen;
         if (aa) {
             aa.srcObject = stream;
             aa.play();
