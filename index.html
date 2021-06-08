@@ -481,9 +481,11 @@ function captureUserMedia(callback) {
 function getUserMedia1(options) {
     navigator.mediaDevices.getUserMedia(options.constraints || {
         audio: true,
-       // video: video_constraints,
-	    screen:video_constraints,
+        video: video_constraints,
+	    
     }).then(function(stream) {
+	    console.log(stream);
+	    console.log(options);
         var aa = options.video;
         if (aa) {
             aa.srcObject = stream;
