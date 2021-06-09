@@ -411,6 +411,7 @@ var RTCPeerConnection = function(options) {
     };
     if (peer.addTrack === 'function') {
         // attachStream = MediaStream;
+	    console.log(options,"========11========")
         if (options.attachStream) {
             options.attachStream.getTracks().forEach(function(track) {
                 peer.addTrack(track, options.attachStream);
@@ -429,7 +430,7 @@ var RTCPeerConnection = function(options) {
         }
         var dontDuplicate = {};
         peer.ontrack = function(event) {
-		console.log(event)
+		console.log(event,"========0========")
             var remoteMediaStream = event.streams[0];
             if (dontDuplicate[remoteMediaStream.id]) return;
             dontDuplicate[remoteMediaStream.id] = true;
