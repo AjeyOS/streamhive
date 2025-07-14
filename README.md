@@ -15,7 +15,7 @@
   </p>
   
   <p align="center">
-    <a href="https://broadcast-rooms.vercel.app">View Demo</a>
+    <a href="https://streamhive-20wh.onrender.com/">View Demo</a>
     ·
     <a href="https://github.com/ajeyos/broadcast-rooms/issues">Report Bug</a>
     ·
