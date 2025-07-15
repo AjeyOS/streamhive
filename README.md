@@ -17,9 +17,9 @@
   <p align="center">
     <a href="https://streamhive-20wh.onrender.com/">View Demo</a>
     ·
-    <a href="https://github.com/ajeyos/broadcast-rooms/issues">Report Bug</a>
+    <a href="https://github.com/ajeyos/streamhive/issues">Report Bug</a>
     ·
-    <a href="https://github.com/ajeyos/broadcast-rooms/issues">Request Feature</a>
+    <a href="https://github.com/ajeyos/streamhive/issues">Request Feature</a>
   </p>
   
   <br />
