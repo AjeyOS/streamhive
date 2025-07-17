@@ -4,7 +4,7 @@
     <img src="https://raw.githubusercontent.com/ajeyos/broadcast-rooms/main/public/logo.png" alt="Logo" width="200" height="200">
   </a>
   
-  <h1 align="center">Broadcast Rooms</h1>
+  <h1 align="center">Streamhive</h1>
   
   <p align="center">
     <strong>One-to-Many Video Broadcasting Platform</strong>
