@@ -4,7 +4,7 @@
     <img src="https://raw.githubusercontent.com/ajeyos/broadcast-rooms/main/public/logo.png" alt="Logo" width="200" height="200">
   </a>
   
-  <h1 align="center">Broadcast Rooms</h1>
+  <h1 align="center">Streamhive</h1>
   
   <p align="center">
     <strong>One-to-Many Video Broadcasting Platform</strong>
@@ -15,11 +15,11 @@
   </p>
   
   <p align="center">
-    <a href="https://broadcast-rooms.vercel.app">View Demo</a>
+    <a href="https://streamhive-20wh.onrender.com/">View Demo</a>
     ·
-    <a href="https://github.com/ajeyos/broadcast-rooms/issues">Report Bug</a>
+    <a href="https://github.com/ajeyos/streamhive/issues">Report Bug</a>
     ·
-    <a href="https://github.com/ajeyos/broadcast-rooms/issues">Request Feature</a>
+    <a href="https://github.com/ajeyos/streamhive/issues">Request Feature</a>
   </p>
   
   <br />
