@@ -17,6 +17,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'One-to-Many Video Broadcasting',
   description: 'Perfect for online examinations monitoring, multi-doctor consultations, and real-time operations monitoring.',
+   verification: {
+   google: 'ePmt0NmS9xAFoGEi_nRbFZjV4LlEGj3KEkfMRgIvlrw',
+  //   yandex: 'your-yandex-verification-code',
+   },
 }
 
 export default function RootLayout({
